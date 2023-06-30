@@ -22,9 +22,9 @@ fn main() {
             break;
         } else {
             if guess.trim().parse::<u32>().unwrap() > secret_number {
-                println!("You guessed incorrectly!\nYour guess was too high.\nYou have {} tries left.", tries);
+                println!("You guessed incorrectly!\nYour guess was too high.\nYou have {tries} tries left.");
             } else {
-                println!("You guessed incorrectly!\nYour guess was too low.\nYou have {} tries left.", tries);
+                println!("You guessed incorrectly!\nYour guess was too low.\nYou have {tries} tries left.");
             }
             println!("Please input your guess.");
 
@@ -37,6 +37,6 @@ fn main() {
     }
 
     if tries == 0 {
-        println!("You ran out of tries!\nThe correct number was {}.", secret_number);
+        println!("You ran out of tries!\nThe correct number was {secret_number}.");
     }
 }
